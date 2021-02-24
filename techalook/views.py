@@ -17,6 +17,6 @@ def detail(request):
     """
     Techblog 최근 콘텐츠 목록 출력
     """
-    techblog = Techblog.objects.get("Techblog_id")
+    techblog = Techblog.objects.get("name_id")
     context = {"techblog": techblog}
     return render(request, "techalook/techblog_detail.html", context)

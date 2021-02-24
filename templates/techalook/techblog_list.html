@@ -1,9 +1,9 @@
 {% if techblog_list %}
 <ul>
   {% for techblog in techblog_list %}
-  <li><a href="/techalook/{{ Techblog.id }}/">{{ techblog.name }}</a></li>
+  <li><a href="/techalook/{{ name.id }}/">{{ techblog.name }}</a></li>
   {% endfor %}
 </ul>
 {% else %}
-<p>등록된 기술블로그가 없습니다.</p>
+<p>기술블로그가 없습니다.</p>
 {% endif %}
