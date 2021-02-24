@@ -1,7 +1,7 @@
 {% if techblog_list %}
 <ul>
   {% for techblog in techblog_list %}
-  <li><a href="/techalook/{{ name.id }}/">{{ techblog.name }}</a></li>
+  <li><a href="/techalook/{{ techblog.id }}/">{{ techblog.name }}</a></li>
   {% endfor %}
 </ul>
 {% else %}

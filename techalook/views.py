@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import Techblog
+from .models import Techblog, Card
 
 
 def index(request):
@@ -13,10 +13,10 @@ def index(request):
     return render(request, "techalook/techblog_list.html", context)
 
 
-def detail(request):
+def detail(request, techblog_id):
     """
     Techblog 최근 콘텐츠 목록 출력
     """
-    techblog = Techblog.objects.get("name_id")
+    techblog = Techblog.objects.get(id=techblog_id)
     context = {"techblog": techblog}
     return render(request, "techalook/techblog_detail.html", context)
