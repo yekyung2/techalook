@@ -19,4 +19,5 @@ def detail(request, techblog_id):
     """
     techblog = Techblog.objects.get(id=techblog_id)
     context = {"techblog": techblog}
+
     return render(request, "techalook/techblog_detail.html", context)

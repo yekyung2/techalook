@@ -1,9 +1,37 @@
-{% if techblog_list %}
-<ul>
-  {% for techblog in techblog_list %}
-  <li><a href="/techalook/{{ techblog.id }}/">{{ techblog.name }}</a></li>
-  {% endfor %}
-</ul>
-{% else %}
-<p>기술블로그가 없습니다.</p>
-{% endif %}
+{% extends 'base.html' %} {% block content %} {% load staticfiles %}
+
+<div class="main-search">
+  <img
+    src="{% static 'image/logo.png' %}"
+    alt="My image"
+    style="width: 30%; margin-bottom: 20px"
+  />
+
+  <div class="bar">
+    <input
+      class="searchbar"
+      type="text"
+      title="Search"
+      value="기술블로그를 검색하고 최근 콘텐츠를 확인하세요!"
+    />
+    <a href="">
+      <img
+        class="voice"
+        src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Vector_search_icon.svg"
+        title="Search by Voice"
+    /></a>
+  </div>
+
+  <div class="techblog_list">
+    {% for techblog in techblog_list %}
+    <button class="button">
+      <a
+        href="{% url 'techalook:detail' techblog.id %}"
+        style="text-decoration: none"
+        >{{ techblog.name }}</a
+      >
+    </button>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,36 @@
+{%load static%}
+<style>
+  .nav_ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+  }
+
+  .nav_ul li {
+    float: left;
+  }
+
+  .nav_ul li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+</style>
+
+<ul class="nav_ul">
+  <li>
+    <a class="logo" href="/techalook">
+      <img src="{% static 'image/Navi-logo.png' %}" style="width: 45%"
+    /></a>
+  </li>
+
+  {% comment %}
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+  {% endcomment %}
+</ul>

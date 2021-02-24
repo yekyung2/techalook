@@ -1,3 +1,8 @@
+{% extends 'base.html' %} {% block content %} {% load static %}
+
 <h1>{{ techblog.name }}</h1>
 
-<div>{{ Card.title }}</div>
+<h3>{{ techblog.name }}의 최신 콘텐츠 살펴보기</h3>
+<p>{{ card.title }}</p>
+
+{% endblock %}
