@@ -137,5 +137,10 @@ h1 {
   }
 
   input.searchbar {
-    color:#999999;
+    color:#black;
   }
+
+  ::placeholder {
+    color: 999999;
+  }
+
