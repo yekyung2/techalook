@@ -17,7 +17,7 @@ class Card(models.Model):
     url = models.TextField(default="")
     image = models.ImageField(null=True)
     date = models.DateField()
-    Directory = models.ForeignKey(Techblog, on_delete=models.CASCADE, default="")
+    directory = models.ForeignKey(Techblog, on_delete=models.CASCADE, default="")
 
     def __str__(self):
         return self.title
