@@ -14,8 +14,8 @@ class Techblog(models.Model):
 
 class Card(models.Model):
     title = models.CharField(max_length=300)
-    url = models.TextField(default="")
-    image = models.ImageField(null=True)
+    url = models.URLField(max_length=500, default="")
+    img = models.URLField(max_length=500, blank=True)
     date = models.DateField()
     directory = models.ForeignKey(Techblog, on_delete=models.CASCADE, default="")
 
