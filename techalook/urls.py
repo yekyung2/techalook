@@ -6,5 +6,5 @@ app_name = "techalook"
 
 urlpatterns = [
     path("", views.index, name="index"),
-    path("<int:techblog_id>/", views.detail, name="detail"),
+    path("<int:card_id>/", views.detail, name="detail"),
 ]

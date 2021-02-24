@@ -11,28 +11,25 @@ html{
 
  h1{
     text-align: center;
-    margin-top: 2rem;
+    font-size: 70px;
     margin-bottom: 2rem;
-    font-family: 'Fugaz One', cursive;
+    font-family: 'Saira Stencil One', cursive;
+    margin-bottom: 0.2rem;
+    text-align: center;
+
+    color: #5671FF;
 }
 
-
+h3{
+  margin-top: 0;
+  color: #707070;
+}
 
 body {
     text-align: center;
 }
 
-.techblog_list {
 
-}
-
-h1 {
-    margin-top: 5rem;
-    margin-bottom: 0.2rem;
-    text-align: center;
-    font-family: "Fugaz One", cursive;
-    color: #00ec00;
-  }
   h4 {
     text-align: center;
     font-family: "Fugaz One", cursive;

@@ -13,11 +13,21 @@ def index(request):
     return render(request, "techalook/techblog_list.html", context)
 
 
-def detail(request, techblog_id):
+def detail(request, card_id):
     """
     Techblog 최근 콘텐츠 목록 출력
     """
-    techblog = Techblog.objects.get(id=techblog_id)
-    context = {"techblog": techblog}
+    card = Card.objects.get(id=card_id)
+    context = {"card": card}
 
     return render(request, "techalook/techblog_detail.html", context)
+
+
+# def detail(request, techblog_id):
+#     """
+#     Techblog 최근 콘텐츠 목록 출력
+#     """
+#     techblog = Techblog.objects.get(id=techblog_id)
+#     context = {"techblog": techblog}
+
+#     return render(request, "techalook/techblog_detail.html", context)
