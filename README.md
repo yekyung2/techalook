@@ -3,7 +3,7 @@
 Using Python/Crawling
 <br>
 Web : HTML,CSS,PYTHON/DJANGO <br>
-Library : requests,BeautifulSoup/GeckoDriver
+Library : selenium, bs4, request
 <br><br>
 ![image](https://user-images.githubusercontent.com/18044058/109149615-28a5ce80-77ab-11eb-8623-3eaabb46ce8f.png)
 <br><br>
