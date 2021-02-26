@@ -2,7 +2,7 @@
 ### 웹 크롤러 기반 기술블로그 큐레이션 웹
 Using Python/Crawling
 <br>
-기획/Design : Figma
+기획/Design : Figma <br>
 Web : HTML,CSS,PYTHON/DJANGO <br>
 Python Library : selenium, bs4, request
 <br><br>
